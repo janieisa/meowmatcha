@@ -68,13 +68,7 @@ html{
     text-transform: uppercase;
 }
 
-.header__list a:hover{
-    transition: 0.5s;
-    font-size: 12px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    background: linear-gradient(var(--secondary-clr), #d5f38e);
-}
+
 
 /*END of header styling*/
 
