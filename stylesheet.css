@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+/*colour var*/
+    --primary-clr: #3f7014;
+    --secondary-clr: #ebffc6;
+    --third-clr: #800c1d;
+
+/*font var*/
+    --f1: "Caveat Brush", cursive;
+    --f2: "Poppins", sans-serif;
+
+/*font weight*/
+    --fw1: 400;
+    --fw2: 200;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    max-width: 800px;
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+/*START css header style*/
+
+.header__container{
+    position: relative;
+}
+
+.header__nav{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   position: absolute;
+   right: 0;
+}
+
+.header__logo{
+    margin: 10px 10px 8px 5px;
+    font-family: var(--f1);
+    font-size: 1.5em;
+    color: var(--primary-clr);
+}
+
+.header__list{
+    list-style: none;
+    display: flex; 
+}
+
+.header__list a{
+    display: block;
+    text-decoration: none;
+    margin: 12px;
+    font-family: var(--f2);
+    color: var(--primary-clr);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header__list a:hover{
+    transition: 0.5s;
+    font-size: 12px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: linear-gradient(var(--secondary-clr), #d5f38e);
+}
+
+/*END of header styling*/
+
+/*START Hero Section Styling*/
+
+.hero{
+    display: flex;
+    background-color: var(--secondary-clr);
+}
+
+.hero__image{
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(images/Hero\ Image.jpeg);
+    background-position-x: -120px;
+}   
+
+.hero__content{
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.hero__content-image{
+    position: relative;
+    top: 36%;
+    width: 100%;
+}
+
+.hero__content-image img{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero__content-kanji{
+    top: 40%;
+    left: 15%;
+    position: absolute;
+    font-size: 35px;
+    color: var(--primary-clr);
+    z-index: 2;
+}
+
+.hero__content-info{
+    position: absolute;
+    top: 47%;
+    left: 2%;
+    font-family: var(--f2);
+    font-size: 12px;
+    color: var(--primary-clr);
+    padding: 10px;
+    letter-spacing: 0.9px;
+    z-index: 2;
+}
+
+/*START BEST SELLER STYLING*/
+
+.best__seller{
+    background: linear-gradient(to bottom left, #2c4b11, #c0ce81);
+    display: flex;
+    min-height: 450px;
+}
+
+.best__seller-heading{
+    flex: 1;
+    flex-direction: column;
+}
+
+.best__seller-heading h2{
+    font-size: 35px;
+    font-family: var(--f2);
+    color: var(--secondary-clr);
+    margin: 40px 5px 5px 30px;
+}
+
+.rating-flex{
+    display: flex;
+}
+
+.rating-flex p{
+    color: var(--secondary-clr);
+    font-size: 35px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+
+.best__seller-heading img{
+    width: 38px;
+    height: 38px;
+    margin-left: 33px;
+}
+
+.best__seller-info{
+    background-color: rgba(238, 248, 191, 0.829);
+    margin-left: 30px;
+    min-width: 150px;
+    margin: 45px 0 20px 18px;
+    padding: 10px 10px 15px 10px;
+    border-radius: 15px;
+}
+
+.best__seller-info p{
+    color: var(--primary-clr);
+    font-family: var(--f2);
+    font-size: 15px;
+    letter-spacing: 0.8px;
+}
+
+.best__seller-image{
+    flex: 1;
+    position: relative;
+}
+
+.best__seller-image img{
+    position: absolute;
+    max-width: 100%;
+}
+
+.best__seller-image h2{
+    position: absolute;
+    font-family: var(--f2);
+    color: var(--secondary-clr);
+    font-size: 1.2rem;
+    bottom: 40px;
+    left: 123px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*END BEST SELLER STYLING*/
+
+/*START FOOD MENU SECTION STYLING*/
+
+.food__section{
+    min-height: 703px;
+    background-color: var(--secondary-clr);
+}
+
+.food__menu-container{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--third-clr);
+    padding: 5px 5px 8px 0;
+}
+
+.food__menu-container h3{
+    font-family: var(--f1);
+    font-size: 25px;
+    color: var(--third-clr);
+    word-spacing: 2px;
+}
+
+.food__menu-container p{
+    font-family:  Verdana;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.food__menu-price {
+    display: flex;
+    align-self: flex-end;
+    padding: 8px 30px 8px 8px;
+    border-top-left-radius: 20px;
+    color: var(--secondary-clr);
+    background-color: var(--third-clr);
+}
+
+.food__menu-price img{
+    width: 18px;
+    height: 18px; 
+}
+
+.foodimg{
+    width: 170px;
+    height: 170px;
+}
+
+.food__menu-container:hover{
+    background: linear-gradient(to right, var(--secondary-clr), #e1ff9a);
+}
+
+/*END BEST SELLER STYLING*/
+
+/*START DRINK CARDS STYLING*/
+
+.drinks__cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 500px;
+    flex-wrap: wrap;
+    background-color: #4c6d2f;
+}
+
+
+.drinks__card-each{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    min-height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--secondary-clr) ;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.drinks__card-each img{
+    width: 200px;
+    height: 200px;
+    transition: 0.8s;
+}
+
+.drinks__card-each h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 0 10px 5px 10px;
+    font-family: var(--f1);
+    color: var(--third-clr);
+    transition: 0.8s;
+}
+
+.drinks__card-each p{
+    font-family: var(--f2);
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+.drinks__card-price{
+    display: flex;
+    align-items: center;
+}
+
+.drinks__card-price img{
+    width: 20px;
+    height: 20px;
+}
+
+.drinks__card-price p{
+    padding-top: 10px;
+    word-spacing: 70px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.drinks__card-each:hover{
+    cursor: pointer;
+    background: linear-gradient(  #ffdee3, var(--secondary-clr)) ;
+}
+
+.drinks__card-each img:hover{
+    width: 220px;
+    height: 220px;
+}
+
+/*END DRINK CARDS STYLING*/
+
+/*START FOOTER STYLING*/
+
+.footer__container{
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-clr);
+}
+
+.footer__info{
+    flex: 1;
+    padding: 0 20px 20px 20px;
+    margin-top: 50px ;
+    letter-spacing: 0.7px;
+    color: var(--primary-clr);
+    font-family: var(--f2);
+}
+
+.footer__info h2{
+    font-size: 28px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer__info h3{
+    font-family: var(--f1);
+    font-size: 20px;
+}
+
+.footer__contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    background-color: var(--primary-clr);
+
+}
+
+.footer__contact h2{
+    text-transform: uppercase;
+    font-family: var(--f2);
+    color: var(--secondary-clr);
+    margin-top: 55px;
+    font-size: 29px;
+}
+
+.footer__contact-list{
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.footer__contact-list a{
+    display: block;
+    padding: 30px;
+    width: 400px;
+    text-decoration: none;
+    color: var(--secondary-clr);
+    font-family: var(--f2);
+    border-bottom: 1px solid var(--secondary-clr);
+}
+
+.footer__contact-list a:hover{
+    transition: 0.7s;
+    background-color: var(--secondary-clr);
+    color: var(--third-clr);
+
+    font-size: 20px;
+}
+
+/*END FOOTER STYLING*/
